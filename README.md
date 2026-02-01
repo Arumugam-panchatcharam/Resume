@@ -1,12 +1,12 @@
-# Arumugam Panchatcharam - Professional Resume Website
+# Arumugam Panchatcharam - Resume Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-BADGE-ID/deploy-status)](https://app.netlify.com/sites/YOUR-SITE-NAME/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7ec8a3ec-363e-4482-b464-de44b50e6200/deploy-status)](https://app.netlify.com/projects/arumugam-panchatcharam-resume/deploys)
 
 A modern, responsive resume website built with cutting-edge web technologies. This site showcases my professional experience, skills, and accomplishments as a Principle Engineer specializing in WiFi, embedded systems, and wireless software.
 
 ## 🚀 Live Demo
 
-Visit the live site: [https://arumugam-panchatcharam.netlify.app](https://arumugam-panchatcharam.netlify.app)
+Visit the live site: [https://arumugam-panchatcharam-resume.netlify.app](https://arumugam-panchatcharam-resume.netlify.app)
 
 ## ✨ Features
 
@@ -100,28 +100,23 @@ npm run dev
 
 ## 🌐 Deployment
 
-This project is configured for automatic deployment to Netlify via GitHub Actions.
+This project is configured for automatic deployment to Netlify. Netlify automatically builds and deploys the site whenever you push changes to the `main` branch.
 
 ### Initial Setup
 
 1. **Create a Netlify Account**:
    - Sign up at [netlify.com](https://www.netlify.com/)
-   - Create a new site from the Netlify dashboard
+   - Create a new site and connect it to your GitHub repository
 
-2. **Get Netlify Credentials**:
-   - Go to User Settings → Applications → Personal Access Tokens
-   - Generate a new access token
-   - Copy your site ID from Site Settings → General
+2. **Configure Build Settings**:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Node version: 20.x (configured in `netlify.toml`)
 
-3. **Configure GitHub Secrets**:
-   - Go to your GitHub repository → Settings → Secrets and variables → Actions
-   - Add the following secrets:
-     - `NETLIFY_AUTH_TOKEN`: Your Netlify personal access token
-     - `NETLIFY_SITE_ID`: Your Netlify site ID
-
-4. **Push to Main Branch**:
-   - Any push to the `main` branch will trigger automatic deployment
-   - GitHub Actions will build and deploy your site to Netlify
+3. **Auto-Deploy**:
+   - Netlify automatically detects pushes to the `main` branch
+   - Each commit triggers a new build and deployment
+   - View deployment status via the badge at the top of this README
 
 ### Manual Deployment
 

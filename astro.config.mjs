@@ -10,7 +10,7 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
-  site: 'https://arumugam-panchatcharam.netlify.app',
+  site: 'https://arumugam-panchatcharam-resume.netlify.app',
   output: 'static',
   build: {
     inlineStylesheets: 'auto',

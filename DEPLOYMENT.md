@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide will help you deploy your resume website to Netlify with automatic GitHub Actions deployment.
+This guide will help you deploy your resume website to Netlify with automatic deployment.
 
 ## Prerequisites
 
@@ -18,64 +18,38 @@ git commit -m "Initial commit: Resume website"
 git push origin main
 ```
 
-## Step 2: Create Netlify Site
+## Step 2: Connect GitHub to Netlify
 
 1. Go to [Netlify](https://www.netlify.com/) and sign in
 2. Click "Add new site" → "Import an existing project"
-3. Choose "Deploy manually" (we'll use GitHub Actions for CI/CD)
-4. Note your site name (e.g., `your-site-name.netlify.app`)
+3. Choose "GitHub" as your Git provider
+4. Authorize Netlify to access your GitHub repositories
+5. Select your resume repository
 
-## Step 3: Get Netlify Credentials
+## Step 3: Configure Build Settings
 
-### Get Personal Access Token:
-1. Go to Netlify → User Settings → Applications
-2. Click "New access token"
-3. Give it a name (e.g., "GitHub Actions")
-4. Copy the token (save it securely - you won't see it again)
+Netlify will automatically detect your Astro project, but verify these settings:
 
-### Get Site ID:
-1. Go to your site in Netlify
-2. Navigate to Site Settings → General
-3. Find "Site information" section
-4. Copy the "Site ID" (or "API ID")
+- **Build command**: `npm run build`
+- **Publish directory**: `dist`
+- **Node version**: 20.x (already configured in `netlify.toml`)
 
-## Step 4: Configure GitHub Secrets
+Click "Deploy site"
 
-1. Go to your GitHub repository
-2. Navigate to Settings → Secrets and variables → Actions
-3. Click "New repository secret"
-4. Add these two secrets:
+## Step 4: Automatic Deployments
 
-   **Secret 1:**
-   - Name: `NETLIFY_AUTH_TOKEN`
+Once connected, Netlify will automatically:
+- Deploy whenever you push to the `main` branch
+- Build your site using the settings in `netlify.toml`
+- Provide a deployment URL (e.g., `your-site-name.netlify.app`)
+
+You can view deployment status via:
+- The Netlify dashboard
+- The badge in your README.md
    - Value: Your Netlify personal access token
 
-   **Secret 2:**
-   - Name: `NETLIFY_SITE_ID`
-   - Value: Your Netlify site ID
 
-## Step 5: Test Deployment
-
-1. Make a small change to any file (e.g., update README.md)
-2. Commit and push:
-   ```bash
-   git add .
-   git commit -m "Test deployment"
-   git push origin main
-   ```
-3. Go to GitHub → Actions tab
-4. Watch the deployment workflow run
-5. Once complete, visit your Netlify site URL
-
-## Step 6: Update README Badge
-
-Update the Netlify badge in your README.md:
-
-1. Go to Netlify → Site Settings → Status badges
-2. Copy the badge markdown
-3. Replace the placeholder in README.md
-
-## Step 7: Custom Domain (Optional)
+## Step 5: Custom Domain (Optional)
 
 To use a custom domain:
 
@@ -96,7 +70,7 @@ Whenever you want to update your resume:
    git commit -m "Update resume"
    git push origin main
    ```
-4. GitHub Actions will automatically deploy the changes
+4. Netlify will automatically detect the changes and deploy
 
 ## Troubleshooting
 
@@ -123,11 +97,15 @@ Whenever you want to update your resume:
 
 ## Support
 
+## Troubleshooting
+
 If you encounter issues:
 
-1. Check the [Astro documentation](https://docs.astro.build)
-2. Review [Netlify documentation](https://docs.netlify.com)
-3. Check GitHub Actions logs for specific errors
+1. **Build Failures**: Check the Netlify deploy logs in your dashboard
+2. **Missing Dependencies**: Ensure all dependencies are listed in `package.json`
+3. **Node Version Issues**: The project requires Node 20.x (configured in `netlify.toml`)
+4. Check the [Astro documentation](https://docs.astro.build)
+5. Review [Netlify documentation](https://docs.netlify.com)
 
 ---
 
