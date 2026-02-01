@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
+import Education from '../components/Education.astro';
+import Accomplishments from '../components/Accomplishments.astro';
+import '../styles/global.css';
+---
+
+<Layout>
+  <Header />
+  <main>
+    <Hero />
+    <Experience />
+    <Skills />
+    <Education />
+    <Accomplishments />
+  </main>
+  
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-400">
+        © {new Date().getFullYear()} Arumugam Panchatcharam. All rights reserved.
+      </p>
+      <p class="text-gray-500 text-sm mt-2">
+        Built with Astro, React & Tailwind CSS
+      </p>
+    </div>
+  </footer>
+</Layout>

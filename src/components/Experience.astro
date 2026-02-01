@@ -1,0 +1,55 @@
+---
+import resumeData from '../data/resume.json';
+
+const { experience } = resumeData;
+---
+
+<section id="experience" class="section-container bg-white dark:bg-gray-900">
+  <h2 class="text-4xl font-bold text-center mb-12 gradient-text">
+    Work Experience
+  </h2>
+  
+  <div class="space-y-8">
+    {experience.map((job, index) => (
+      <div 
+        class="card animate-slide-up"
+        style={`animation-delay: ${index * 100}ms`}
+      >
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+              {job.title}
+            </h3>
+            <p class="text-lg text-primary-600 dark:text-primary-400 font-semibold mb-1">
+              {job.company}
+            </p>
+            {job.description && (
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-2 whitespace-pre-line">
+                {job.description}
+              </p>
+            )}
+          </div>
+          <div class="flex flex-col items-start md:items-end mt-2 md:mt-0">
+            <span class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">
+              {job.startDate} - {job.endDate}
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-500">
+              {job.location}
+            </span>
+          </div>
+        </div>
+        
+        <ul class="space-y-2 list-none">
+          {job.achievements.map((achievement) => (
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-primary-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-gray-700 dark:text-gray-300">{achievement}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>

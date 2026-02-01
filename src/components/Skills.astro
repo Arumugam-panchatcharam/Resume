@@ -1,0 +1,31 @@
+---
+import resumeData from '../data/resume.json';
+
+const { skills } = resumeData;
+---
+
+<section id="skills" class="section-container bg-gray-50 dark:bg-gray-800">
+  <h2 class="text-4xl font-bold text-center mb-12 gradient-text">
+    Core Skills
+  </h2>
+  
+  <div class="space-y-8">
+    {Object.entries(skills).map(([category, skillList], index) => (
+      <div 
+        class="animate-slide-up"
+        style={`animation-delay: ${index * 100}ms`}
+      >
+        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+          {category}
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          {skillList.map((skill) => (
+            <span class="skill-chip">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

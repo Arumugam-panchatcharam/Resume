@@ -1,0 +1,149 @@
+{
+  "personal": {
+    "name": "Arumugam Panchatcharam",
+    "title": "Principle Engineer at DTDL",
+    "location": "Chennai, TN, 600067",
+    "phone": "+91 9551119813",
+    "email": "arumugamece2013@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/arumugam-panchatcharam-b0677290",
+    "github": "https://github.com/Arumugam-panchatcharam",
+    "summary": "Embedded systems and wireless software professional with 12+ years of industry experience in WiFi, broadband, and networking platforms. Strong background in 802.11 WLAN, Linux-based embedded systems, and system-level debugging. Currently upskilling toward AI/ML-driven system intelligence, aligned with next-generation of WiFi for the AI Edge integrating AI-Ready and AI-Aware. Actively working on an AI-based log analysis side project to bridge domain expertise with data-driven intelligence."
+  },
+  "skills": {
+    "Wireless & Networking": [
+      "WiFi (802.11 a/b/g/n/ac/ax/be)",
+      "EMR6",
+      "WLAN architecture",
+      "RF fundamentals",
+      "Roaming",
+      "QoS",
+      "Traffic separation",
+      "VLANs"
+    ],
+    "Embedded Systems": [
+      "Linux",
+      "Device drivers",
+      "System bring-up",
+      "Debugging",
+      "Performance optimization"
+    ],
+    "Programming": [
+      "C",
+      "C++",
+      "Python",
+      "Shell scripting"
+    ],
+    "Platforms & Tools": [
+      "Broadcom WiFi SDK",
+      "RDK-B/RDK-V",
+      "OpenBFC",
+      "Git",
+      "Gerrit",
+      "Jenkins",
+      "CI/CD",
+      "Visual Studio"
+    ],
+    "AI/ML": [
+      "Data preprocessing",
+      "Log analytics",
+      "Anomaly detection",
+      "Python-based ML workflows"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Principle Engineer",
+      "company": "Deutsche Telekom Digital Labs (DTDL)",
+      "location": "Bangalore, Karnataka",
+      "startDate": "2023-06",
+      "endDate": "Present",
+      "description": "2023-06 to 2025-03: T-Systems ICT India Pvt Ltd as Senior consultant\n2025-04 to current: Deutsche Telekom Digital Labs (internal transition under same parent company)",
+      "achievements": [
+        "Primarily worked on WiFi-7 (802.11BE) + EasyMesh (EMR6) with Airties integration for Mediatek SOC",
+        "Deployed solution in Germany as SpeedPort-7 (AP CPE) and SpeedPort 7 Plus (Extender)"
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Vantiva India Private Limited",
+      "location": "Chennai, TN",
+      "startDate": "2017-10",
+      "endDate": "2023-06",
+      "achievements": [
+        "Bootloader development for Comcast STB, Gateways, Router and Charter STB, Router, EMTA",
+        "Managing Factory package release for LAB, FGR, Pilot and MP",
+        "Package contains bootloader, PCI images, fuse OTP's and provision data"
+      ]
+    },
+    {
+      "title": "Embedded Developer I",
+      "company": "Mbit Wireless",
+      "location": "Chennai, TN",
+      "startDate": "2015-05",
+      "endDate": "2017-09",
+      "achievements": [
+        "Worked in Modem Abstraction Layer (MAL) of 4G LTE modem with direct interaction with Host through AT or MBIM commands",
+        "Design and implementation of MDL (message description language) to decode Network IE's and USIM files",
+        "Design and implementation of FSM's for USIM interface and MBIM CID's"
+      ]
+    },
+    {
+      "title": "Embedded Associate Executive",
+      "company": "Accel IT Resources",
+      "location": "Chennai, Chennai",
+      "startDate": "2013-05",
+      "endDate": "2015-04",
+      "achievements": [
+        "Experience working with AT89C51 and PIC 18F family of micro-controllers",
+        "Mini project on Facial recognition with OpenCV and Raspberry Pi",
+        "Mini project on Remote monitoring of wind turbine params with CAN and PIC"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Tech - Artificial Intelligence",
+      "institution": "Planned",
+      "year": "2026-01",
+      "description": "Aligned with professional upskilling and career transition"
+    },
+    {
+      "degree": "B.E: Electronics and Communications Engineering",
+      "institution": "Gojan School of Business and Technology - Edapalayam",
+      "year": "2009-06 - 2013-04",
+      "grade": "7.97 CGPA"
+    },
+    {
+      "degree": "High School Diploma",
+      "institution": "St.pauls Mat HR Sec School - Puzhal",
+      "year": "2007-05 - 2009-05",
+      "grade": "82%"
+    }
+  ],
+  "accomplishments": [
+    {
+      "title": "2nd Place in Hackathon",
+      "description": "Face and Gesture recognition in set top box. Favorites tuned based on face recognition. Channel control (No, CH +/-, Volume +/-) based on gesture recognition."
+    },
+    {
+      "title": "CES Demo 2020",
+      "description": "Brought up Bootloader and RDKV on Jade/Mini Jade - 4K UHD with WiFi 6"
+    },
+    {
+      "title": "HackFest Gurugram Participation",
+      "description": "Showcased AI based Log Analysis Tool",
+      "link": "https://github.com/Arumugam-panchatcharam/parsemylog-ai.git"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Post Graduate Diploma in Embedded System Design",
+      "year": "2013-04"
+    },
+    {
+      "name": "CWNP Wireless Certification",
+      "year": "2025-09",
+      "status": "Pursuing"
+    }
+  ]
+}
